@@ -9,6 +9,5 @@ export class AppComponent {
   items: string[] = [];
 
   onSubmit(item: string) {
-    this.items.push(item);
   }
 }

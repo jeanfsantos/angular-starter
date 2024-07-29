@@ -5,5 +5,5 @@ import { Component, Input } from '@angular/core';
   templateUrl: './child2.component.html'
 })
 export class Child2Component {
-  @Input() items: string[] = [];
+  items: string[] = [];
 }

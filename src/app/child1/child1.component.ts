@@ -6,10 +6,4 @@ import { FormControl, FormGroup } from '@angular/forms';
   templateUrl: './child1.component.html',
 })
 export class Child1Component {
-  @Output() submit = new EventEmitter<string>;
-  item = ''
-
-  onSave() {
-    this.submit.emit(this.item);
-  }
 }
