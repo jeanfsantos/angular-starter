@@ -1,5 +1,10 @@
-## Communication Between Angular Components
+## Angular Practice Exercise
 
-1. Child1 component sends data to the parent component.
-2. Parent component manages the list of data and sends it to Child2.
-3. Child2 component displays the data.
+The test aims to exchange data between components.
+
+1. It should be possible to type text in the input child1 component and send the data when the add button is clicked.
+
+2. It should create a list and manage the items.
+
+3. It should display the list of items in the child2 component.
+
