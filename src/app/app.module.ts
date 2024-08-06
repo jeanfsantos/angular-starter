@@ -1,23 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
-import { Child1Component } from './child1/child1.component';
-import { Child2Component } from './child2/child2.component';
+import { SearchFormComponent } from './search-form/search-form.component';
+import { ListComponent } from './list/list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TodoService } from './todo.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Child1Component,
-    Child2Component
+    SearchFormComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    TodoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
